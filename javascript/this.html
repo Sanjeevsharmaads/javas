@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Objects using this in JavaScript</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var person = {
+    firstName: "Mickey",
+    lastName : "Mouse",
+    id       : 101,
+    fullName : function() {
+       return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+
+
+	</script>
+
+</body>
+</html>
