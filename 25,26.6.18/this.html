@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript this Keyword</h2>
+
+<p>In this example, this represents the person object that "owns" the fullName method.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstName  : "John",
+    lastName   : "Doe",
+    id         : 5566,
+    myFunction : function() {
+       return this;
+    }
+};
+
+document.getElementById("demo").innerHTML = person.myFunction();
+</script>
+
+</body>
+</html>
