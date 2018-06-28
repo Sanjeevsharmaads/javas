@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	var myObj,myJson;
+	myObj= { "name":"Sanjeev", "age":21, "city":"Chandigarh" };
+	myJson=JSON.stringify(myObj);
+	localStorage.setItem("testJSON",myJson);
+	 var text=localStorage.getItem("testJSON");
+	 var obj=JSON.parse(text);
+	 document.getElementById("demo").innerHTML=obj.name;
+</script>
+</body>
+</html>
