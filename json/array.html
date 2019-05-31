@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Json Array.</h2>
+
+<p id="demo"></p>
+
+<script>
+
+var myJSON = '{"student":['+
+'{ "name":"Sourav", "age":31, "city":"New Delhi" },'+
+'{ "name":"Simran", "age":21, "city":"Gurgaon" },'+
+'{ "name":"karan", "age":27, "city":"Chandigarh" }]}';
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.student[1].name+" <br>"+myObj.student[1].city;
+
+</script>
+
+</body>
+</html>
